@@ -10,7 +10,7 @@ Proyek analisis perubahan tutupan lahan di Kota Interlaken, Swiss, menggunakan c
 |---|---|
 | Davina Maulidya Maghfira | 1242002052 |
 | Muhammad Khoiruddin | 1242002026 |
-| Muhammad Afzaal Ghofran | 12320020 |
+| Muhammad Afzaal Ghofran | 1232002004 |
 | Nuraini | 1232002077 |
 | Salvina Rosalie | 1232002074 |
 | Supriatna Saputra | 1232002067 |
