@@ -31,7 +31,45 @@ Proyek analisis perubahan tutupan lahan di Kota Interlaken, Swiss, menggunakan c
 | **Akurasi Model** | 94,64% (Kappa 0,893) |
 
 ---
+📁 Struktur Folder
+├── README.md              # Dokumen ini
+├── index.html              # WebGIS interaktif (single-file: peta, data proses, evaluasi, insight)
+├── interlaken-hero.jpg     # Gambar hero/header WebGIS
+├── GEE/                     # Script Google Earth Engine
+│   └── Script.js                # Preprocessing, cloud masking, composite, training & klasifikasi RF
+├── Data Source/              # Data mentah/sumber
+│   ├── Batas_Wilayah_Interlaken.geojson   # Batas administrasi (sumber: GADM)
+│   ├── Interlaken_Classified_2020.tif     # Raster hasil klasifikasi 2020
+│   ├── Interlaken_Classified_2025.tif     # Raster hasil klasifikasi 2025
+│   ├── GroundTruth_NDVI_2020.zip          # Titik ground truth vegetasi (NDVI) 2020
+│   ├── GroundTruth_NDVI_2025.zip          # Titik ground truth vegetasi (NDVI) 2025
+│   ├── GroundTruth_NDBI_2020.zip          # Titik ground truth bangunan (NDBI) 2020
+│   ├── GroundTruth_NDBI_2025.zip          # Titik ground truth bangunan (NDBI) 2025
+│   ├── TrainingSet_Gabungan_2020_2025.csv # Data training ground truth (432 titik)
+│   ├── TestingSet_Gabungan_2020_2025.csv  # Data testing ground truth (168 titik)
+│   ├── Target_2020_GeoJSON.geojson        # Vektor area bangunan 2020
+│   ├── Target_2025_GeoJSON.geojson        # Vektor area bangunan 2025
+│   ├── Gain_GeoJSON.geojson               # Area bangunan baru (2020→2025)
+│   └── Loss_GeoJSON.geojson               # Area bangunan hilang (2020→2025)
+├── Result/                  # Hasil olahan/output analisis
+│   ├── Interlaken_Classified_2020.tif        # Raster hasil klasifikasi 2020
+│   ├── Interlaken_Classified_2025.tif        # Raster hasil klasifikasi 2025
+│   ├── Sentinel_RGB_2020.tif                 # Komposit RGB Sentinel-2 2020
+│   ├── Sentinel_RGB_2025.tif                 # Komposit RGB Sentinel-2 2025
+│   ├── Target_2020_GeoJSON.geojson           # Vektor area bangunan 2020
+│   ├── Target_2025_GeoJSON.geojson           # Vektor area bangunan 2025
+│   ├── Gain_GeoJSON.geojson                  # Area bangunan baru (2020→2025)
+│   ├── Loss_GeoJSON.geojson                  # Area bangunan hilang (2020→2025)
+│   ├── TrainingSet_Gabungan_2020_2025.csv    # Data training ground truth
+│   ├── TestingSet_Gabungan_2020_2025.csv     # Data testing ground truth
+│   ├── Feature_Importance_Random_Forest.png  # Chart kontribusi band/indeks ke model
+│   ├── Gain_vs_Loss_Building_2020_ke_2025.png # Chart perbandingan luas gain vs loss
+│   ├── Net_Change_2020_ke_2025.png           # Chart net change per kelas
+│   └── Perbandingan_Luas_Tutupan_Lahan.png   # Chart luas tutupan lahan 2020 vs 2025
+└── Report/                  # Laporan tugas akhir
+    └── Laporan_Akhir_Lahan_Interlaken.pdf
 
+---
 ## 🔗 Tautan
 
 - **WebGIS (Live):** https://interlaken-webgis.vercel.app/
