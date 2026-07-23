@@ -31,7 +31,9 @@ Proyek analisis perubahan tutupan lahan di Kota Interlaken, Swiss, menggunakan c
 | **Akurasi Model** | 94,64% (Kappa 0,893) |
 
 ---
-📁 Struktur Folder
+## 📁 Struktur Folder
+ 
+```
 ├── README.md              # Dokumen ini
 ├── index.html              # WebGIS interaktif (single-file: peta, data proses, evaluasi, insight)
 ├── interlaken-hero.jpg     # Gambar hero/header WebGIS
@@ -69,7 +71,7 @@ Proyek analisis perubahan tutupan lahan di Kota Interlaken, Swiss, menggunakan c
 └── Report/                  # Laporan tugas akhir
     └── Laporan_Akhir_Lahan_Interlaken.pdf
 
----
+```
 ## 🔗 Tautan
 
 - **WebGIS (Live):** https://interlaken-webgis.vercel.app/
